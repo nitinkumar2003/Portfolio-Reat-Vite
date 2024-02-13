@@ -26,7 +26,7 @@ const About = () => {
 
                 <p className='slide-in-bottom'>
                   Technologies I've worked on include: <span className="text-red ls-2">React.js, JavaScript, Next.js, HTML, CSS, Bootstrap, Tailwind CSS, Ant Design, jQuery</span>.
-                  Additionally, my skills extend to: <span className="text-red ls-2">Node.js, Express.js, MongoDB</span>.
+                <br />  Additionally, my skills extend to: <span className="text-red ls-2">Node.js, Express.js, MongoDB</span>.
                 </p>
 
                 <p className='slide-in-bottom'>

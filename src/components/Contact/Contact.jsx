@@ -30,12 +30,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { _serviceId, _templateId, _userId } = _emailConfig
-        var templateParams = {
-            name: 'James',
-            subject: 'Check this out!',
-            email: "aaaaa@mailinator.com",
-            message: "messagemessage"
-        };
+        var templateParams = contactDetails;
         setIsLoading(true);
         send(_serviceId, _templateId, templateParams, _userId)
             .then(function (response) {
