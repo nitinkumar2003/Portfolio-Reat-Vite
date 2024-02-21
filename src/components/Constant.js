@@ -63,10 +63,10 @@ function returnValueLabel(value, label) {
 
 
 export const _profileDetails = [
-    // {
-    //     url:"https://github.com/nitinkumar2003",
-    //     image:'github'
-    // },
+    {
+        url:"https://github.com/nitinkumar2003",
+        image:'github'
+    },
     {
         url: "https://www.hackerrank.com/profile/janmedanitin",
         image: 'hackerRank'
@@ -179,4 +179,24 @@ export const _projectsDetails = [
 
     // },
 
+]
+
+export const _contactList=[
+    {
+        name:"Email",
+        url:"mailto:nitinkumarja2003@gmail.com",
+    },
+    {
+        name:"LinkedIn",
+        url:"https://www.linkedin.com/in/nitin-kumar-42026421b/",
+    },
+    {
+        name:"Skype",
+        url:"https://join.skype.com/invite/ydKR0F0fYlhu",
+    },
+    {
+        name:"Github",
+        url:"https://github.com/nitinkumar2003",
+    },
+    
 ]

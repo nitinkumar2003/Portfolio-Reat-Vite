@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
-import { VscHome } from 'react-icons/vsc'
-import { FiUser } from 'react-icons/fi'
-import { BsCode } from 'react-icons/bs'
 import { MdOutlineDashboard, MdOutlineContactPage, MdEmail } from 'react-icons/md'
 import { AiFillLinkedin, AiFillSkype, AiFillGithub, AiOutlineUnorderedList } from 'react-icons/ai'
 import { send } from 'emailjs-com';
-import { _emailConfig } from '../Constant'
+import { _emailConfig, _contactList } from '../Constant'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../Loader'
@@ -15,10 +12,18 @@ const newObj = () => {
 }
 const Contact = () => {
     const [contactDetails, setContactDetails] = useState({ ...newObj() })
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(false);
+
+
+
+    const iconsList = {
+        "Email": <MdEmail className='fs-4' />,
+        "Skype": <AiFillSkype className='fs-4' />,
+        "LinkedIn": <AiFillLinkedin className='fs-4' />,
+        "Github": <AiFillGithub className='fs-4' />,
+    }
 
     const handleChange = (e) => {
-
         const key = e.target.id;
         const value = e.target.value;
         setContactDetails(prev => ({
@@ -82,20 +87,14 @@ const Contact = () => {
                                 <div className="row text-center">
                                     <span>Social Media Contacts</span>
                                     <div>
-
-                                        <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc hover-effect'>
-                                            <MdEmail className='fs-4' />Email
-                                        </button>
-                                        <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc hover-effect'>
-                                            <AiFillLinkedin className='fs-4' />LinkedIn
-                                        </button>
-
-                                        <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc hover-effect'>
-                                            <AiFillSkype className='fs-4' />Skype
-                                        </button>
-                                        <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc hover-effect'>
-                                            <AiFillGithub className='fs-4' />Github
-                                        </button>
+                                        {_contactList.map((item) => {
+                                            return (
+                                                <button className='mx-2 my-3 border rounded py-1 px-2 mw-fc hover-effect'
+                                                 onClick={()=>window.open(item.url, '_blank')}>
+                                                    {iconsList[item.name]}{item.name}
+                                                </button>
+                                            )
+                                        })}
                                     </div>
 
                                 </div>
