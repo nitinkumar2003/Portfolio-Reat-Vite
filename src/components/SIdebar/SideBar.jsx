@@ -27,7 +27,7 @@ const Sidebar = () => {
                     <Link to="/" className="d-flex align-items-center pb-1 mb-md-0 me-md-auto text-white text-decoration-none">
                         <span className="fs-5 d-none d-sm-inline ff-jost fw-600">
                         {/* <img className='w-25 h-25' style={{mixBlendMode:'color-burn'}} src="/Images/NKJ.jpeg" /> */}
-                        Nitin</span>
+                        Nitin Kumar</span>
                     </Link>
                     <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         {

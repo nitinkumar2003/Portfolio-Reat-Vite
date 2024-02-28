@@ -21,11 +21,11 @@ function App() {
           <Sidebar />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/skills' element={<Skills />} />
-            <Route path='/resume' element={<Resume />} />
-            <Route path='/project' element={<Projects />} />
-            <Route  path='/contact' element={<Contact />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Skills' element={<Skills />} />
+            <Route path='/Resume' element={<Resume />} />
+            <Route path='/Project' element={<Projects />} />
+            <Route  path='/Contact' element={<Contact />} />
 
 
           </Routes>

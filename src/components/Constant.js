@@ -85,23 +85,23 @@ export const _sideBarLinks = [
     },
     {
         label: 'About',
-        url: "/about",
+        url: "/About",
     },
     {
         label: 'Skills',
-        url: "/skills",
+        url: "/Skills",
     },
     {
         label: 'Projects',
-        url: "/project",
+        url: "/Project",
     },
     {
         label: 'Resume',
-        url: "/resume",
+        url: "/Resume",
     },
     {
         label: 'Contact',
-        url: "/contact",
+        url: "/Contact",
     },
 ]
 
