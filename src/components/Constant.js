@@ -93,7 +93,7 @@ export const _sideBarLinks = [
     },
     {
         label: 'Projects',
-        url: "/Project",
+        url: "/Projects",
     },
     {
         label: 'Resume',
